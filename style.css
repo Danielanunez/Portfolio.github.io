@@ -1,0 +1,134 @@
+@font-face{
+    font-family: 'miFuente';
+    src: url('./fonts/Glossy\ Sheen\ Shine\ DEMO.ttf');
+}
+
+:root{
+    --font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #d3cce3 ;
+    overflow-x: hidden;
+}
+header{
+    background-color: rgba(26, 8, 31, 0.8);
+    width: 100%;
+    height: 4em;
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+    width: 18em;
+    align-self: center;
+}
+#nav{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding-right: 1em;
+    font-family: var(--font-family);
+    font-size: 1.3em;
+}
+.list a:hover{
+    animation: opacityAnimate 1s ease-in-out;
+}
+@keyframes opacityAnimate{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}
+/*----------banner-------------*/
+.banner{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./img/pexels-tom-swinnen-1309766.jpg");
+    background-size: cover;
+    
+}
+.banner:after{
+    content: " ";
+    background: #26282b;
+    width: 100vw;
+    height: 100vh;
+    opacity: .60;
+    position: absolute;
+}
+
+.cont-title{
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.photo{
+    width: 10em;
+    height: 11em;
+    border-radius: 90%;
+}
+.title{
+    font-size: 2em;
+    font-family: var(--font-family);
+    color: #f8f8f8;
+}
+.name{
+    display: inline-block;
+    font-family: 'miFuente';
+    font-size: 3.5em;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #4fd2e0;
+}
+
+.container-text{
+    margin-top: 1em;
+    font-family: var(--font-family);
+    font-size: 1em;
+}
+/*---------form-------------*/
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.form-container form{
+    width: 50%;
+    height: 60vh;
+    padding: 1em;
+    margin-left: 3em;
+    box-shadow: 0px 0px 31px 15px rgba(0,0,0,0.1);
+    overflow-y: hidden;
+}
+.title-form{
+    font-family: var(--font-family);
+    font-size: 2em;
+    text-align: center;
+}
+form div{
+    margin-top: 1em;
+}
+
+
