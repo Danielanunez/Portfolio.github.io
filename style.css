@@ -1,6 +1,6 @@
 @font-face{
     font-family: 'miFuente';
-    src: url('./fonts/Glossy\ Sheen\ Shine\ DEMO.ttf');
+    src: url('./src/fonts/Glossy\ Sheen\ Shine\ DEMO.ttf');
 }
 
 :root{
@@ -61,7 +61,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("./img/pexels-tom-swinnen-1309766.jpg");
+    background-image: url("./src/img/pexels-tom-swinnen-1309766.jpg");
     background-size: cover;
     
 }
@@ -100,11 +100,18 @@ header{
     text-transform: uppercase;
     color: #4fd2e0;
 }
+.name:hover{
+    color: #79e1ed;
+    text-shadow: 5px 5px 13px #a3b9ee;
+    cursor: default;
+    transition: .5s;
+}
 
 .container-text{
     margin-top: 1em;
     font-family: var(--font-family);
     font-size: 1em;
+    background-color: #4fd2e0;
 }
 /*---------form-------------*/
 .form-container{

@@ -14,7 +14,7 @@
 <body>
     <header class="container-fluid">
         <div class="logo sm:px-4">
-            <img src="/img/Logo-sinFondo.png" alt="Logo Daniela Nunez Developer">
+            <img src="/src/img/Logo-sinFondo.png" alt="Logo Daniela Nunez Developer">
         </div>
         <nav id="nav">
             <ul class="list">
@@ -27,31 +27,39 @@
     </header>
     <main>
         <section class="banner"><!--Titulo-->
-                <div class="cont-title  relative">
-                    <img src="./img/photo.jpg" alt="Foto de Daniela Nunez" class="photo">
-                    <h2 class="title">¡Hola! soy</h2>
-                    <h1 class="name">Daniela Nuñez</h1>
-                    <h2 class="title">FullStak Developer</h2>
+            <div class="cont-title  relative">
+                <img src="./src/img/photo.jpg" alt="Foto de Daniela Nunez" class="photo">
+                <h2 class="title">¡Hola! soy</h2>
+                <h1 class="name">Daniela Nuñez</h1>
+                <h2 class="title">FullStak Developer</h2>
             </div>
         </section>
-        <!--
-            <div class="container-text">
-                    <p class="text">De la provincia de Mendoza, me sumergí en el mundo IT porque la tecnología es
-                        algo que me apasiona, poder descubrir y obtener nuevos conocimientos dia tras dia;
-                        lograr, con mucho esfuerzo, resultados óptimos para que los usuarios puedan disfrutar del
-                        producto
-                        finales lo que más me interesa.
-                    </p>
-                </div>
-        -->
-        <section><!--Skills-->
 
+        <section> <!--Sobre mi-->
+            <div class="container-text">
+                <p class="text">De la provincia de Mendoza con 25 años me sumergí en el mundo IT porque la tecnología es
+                    algo que me apasiona, poder descubrir y obtener nuevos conocimientos dia tras dia;
+                    lograr, con mucho esfuerzo, resultados óptimos para que los usuarios puedan disfrutar del
+                    producto
+                    finales lo que más me interesa. <br>
+                    Comencé en un bootcamp de mi provincia en el 2021 y me dí cuenta que esto es a lo que me quiero
+                    dedicar,
+                    tocamos muy poco el front pero lo que vi me gustó, entonces decidí seguir apostando por este rubro.
+                    El año pasado
+                    me inscribí en codo a codo en Js/Node.js y decidí ir por la parte de diseño web, quiero seguir
+                    aprendiendo y poder
+                    vivir de esto que me encanta.
+                </p>
+            </div>
         </section>
 
+        <section id="skillSection"><!--Skills-->
+                
+        </section>
 
         <section><!--Proyectos-->
-
         </section>
+
         <section class="form-container" id="form"> <!---Formulario-->
             <div>
                 <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" width="30em"
@@ -156,6 +164,16 @@
             </form>
         </section>
     </main>
+
+
+    <script src="./src/js/DOM/DOM.js" type="module"></script>
+    
+    <script src="./src/js/skills/skills.js" type="module"></script>
+    <script src="./src/js/skills/skillsCard.js" type="module"></script>
+
+    <script src="./src/js/run/run.js" type="module"></script>
+
+
 </body>
 
 </html>
