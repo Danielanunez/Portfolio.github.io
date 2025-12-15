@@ -14,31 +14,31 @@
     
 }
 body{
-    background-color: #d3cce3 ;
+    background-color: rgba(20, 34, 8, 0.9) ;
     overflow-x: hidden;
 }
 header{
-    background-color: rgba(26, 8, 31, 0.8);
+    background-color: rgba(47, 54, 42, 0.8);
     width: 100%;
     height: 4em;
     display: flex;
     flex-direction: row;
 }
 .logo{
-    width: 18em;
+    width: 10em;
     align-self: center;
+    margin: auto;
 }
 #nav{
     width: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
 }
 .list{
     display: flex;
     flex-direction: row;
     color: white;
-    padding-right: 1em;
     font-family: var(--font-family);
     font-size: 1.3em;
 }
@@ -58,16 +58,11 @@ header{
     width: 100vw;
     height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("./src/img/pexels-tom-swinnen-1309766.jpg");
-    background-size: cover;
-    
 }
 .banner:after{
     content: " ";
-    background: #26282b;
     width: 100vw;
     height: 100vh;
     opacity: .60;
@@ -81,9 +76,12 @@ header{
     justify-content: center;
     align-items: center;
 }
+#containerTextBanner{
+    padding-right: 10em;
+}
 .photo{
-    width: 10em;
-    height: 11em;
+    width: 30em;
+    height: 30em;
     border-radius: 90%;
 }
 .title{
@@ -107,12 +105,22 @@ header{
     transition: .5s;
 }
 
-.container-text{
+.text{
+    width: 40em;
     margin-top: 1em;
     font-family: var(--font-family);
     font-size: 1em;
-    background-color: #4fd2e0;
+    color: #f8f8f8;
 }
+/*---------Skill cards-------*/
+#skillSection{
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
 /*---------form-------------*/
 .form-container{
     display: flex;

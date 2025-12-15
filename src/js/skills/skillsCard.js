@@ -7,7 +7,7 @@ export const renderSkills = (skill) =>{
     //.join('') une todo con un vacio entre los li, saca las comas
 
     const skillNode = document.createElement('ul');
-    skillNode.className = "flex border-solid border-2 border-sky-500 ";
+    skillNode.className = "flex border-solid";
     skillNode.innerHTML = createCard;
 
     skillSection.append(skillNode);
