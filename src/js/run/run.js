@@ -1,5 +1,3 @@
-import { skills } from "../skills/skills.js";
-import { creadCardSkill, renderSkills } from "../skills/skillsCard.js";
+import { creadCardSkill} from "../skills/skillsCard.js";
 
-renderSkills(skills);
 creadCardSkill();
